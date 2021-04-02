@@ -1,5 +1,7 @@
 package com.alonebook.book.springboot.web;
 
+import com.alonebook.book.springboot.domain.config.auth.LoginUser;
+import com.alonebook.book.springboot.domain.config.auth.dto.SessionUser;
 import com.alonebook.book.springboot.service.PostsService;
 import com.alonebook.book.springboot.web.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
@@ -8,16 +10,26 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import javax.servlet.http.HttpSession;
+
 @RequiredArgsConstructor
 @Controller
 public class IndexController {
 
     private final PostsService postsService;
+    private final HttpSession httpSession;
 
     // Model을 통해 서버 템플릿 엔진에서 사용할 수 있는 객체를 저장할 수 있습니다.
+    // CustomOAuth2UserService에서 로그인 성공시 세션에 SessionUser를 저장
+    // SessionUser user = (SessionUser) httpSession.getAttribute("user"); -> @LoginUser SessionUser user
     @GetMapping("/")
-    public String index(Model model) {
+    public String index(Model model, @LoginUser SessionUser user) {
         model.addAttribute("posts", postsService.findAllDesc());
+
+        // 세션에 저장된 값이있을때만 로그인 버튼 보이게 설정.
+        if(user != null)
+            model.addAttribute("userName", user.getName());
+
         return "index";
     }
 
