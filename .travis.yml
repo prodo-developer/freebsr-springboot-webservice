@@ -25,8 +25,8 @@ before_deploy:
 
 deploy:
   - provider: s3
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
+    access_key_id: AKIA57OHDUUD4USHNVMH
+    secret_access_key: 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
     bucket: freebsr-springboot-build
     region: ap-northeast-2
     skip_cleanup: true
