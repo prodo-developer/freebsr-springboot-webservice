@@ -35,8 +35,6 @@ deploy:
     wait-until-deployed: true
 
   - provider: codedeploy
-      on:
-        all_branches: true
     access_key_id: AKIA57OHDUUD4USHNVMH
     secret_access_key: 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
     bucket: freebsr-springboot-build
