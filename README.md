@@ -1,16 +1,16 @@
 # 스프링 부트와 AWS로 혼자 구현하는 웹 서비스 실습 목차
 
 # 03장 스프링 부트에서 JPA로 데이터베이스 다뤄보자 <br>
-_3.1 JPA 소개 <br>
-__Spring Data JPA <br>
-__실무에서 JPA <br>
-__요구사항 분석 <br>
-_3.2 프로젝트에 Spring Data Jpa 적용하기 <br>
-_3.3 Spring Data JPA 테스트 코드 작성하기 <br>
-_3.4 등록/수정/조회 API 만들기 <br>
-_3.5 JPA Auditing으로 생성시간/수정시간 자동화하기 <br>
-__LocalDate 사용 <br>
-__JPA Auditing 테스트 코드 작성하기 <br>
+3.1 JPA 소개 <br>
+Spring Data JPA <br>
+실무에서 JPA <br>
+요구사항 분석 <br>
+3.2 프로젝트에 Spring Data Jpa 적용하기 <br>
+3.3 Spring Data JPA 테스트 코드 작성하기 <br>
+3.4 등록/수정/조회 API 만들기 <br>
+3.5 JPA Auditing으로 생성시간/수정시간 자동화하기 <br>
+LocalDate 사용 <br>
+JPA Auditing 테스트 코드 작성하기 <br>
 
 # 04장 머스테치로 화면 구성하기 <br>
 _4.1 서버 템플릿 엔진과 머스테치 소개 <br>
