@@ -47,7 +47,7 @@ JPA Auditing 테스트 코드 작성하기 <br>
 7.2 RDS 운영환경에 맞는 파라미터 설정하기 <br>
 7.3 내 PC에서 RDS에서 접속해 보기 <br>
 Database 플러그인 설치 <br>
-_7.4 EC2에서 RDS에서 접근 확인 <br>
+7.4 EC2에서 RDS에서 접근 확인 <br>
  
 # 08장 EC2 서버에 프로젝트를 배포해 보자 <br>
 _8.1 EC2에 프로젝트 Clone 받기 <br>
